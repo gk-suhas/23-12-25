@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 20px;
+            margin: 0;
+            border: 0;
+        }
+        h1::before{
+              content:" before ";
+              color:red
+        }
+        h1::after{
+            content: " after ";
+            color:blue
+        }     
+        h1::first-letter{
+           color:orange;
+           font-size: 70px; 
+        }
+        h2::first-line{
+            color: red;
+            font-size: 40px;
+        }
+        input::placeholder{
+             color:pink;
+             font-size: 10px;
+        }
+        li::marker{
+            color:red;
+            font-size:40px;
+        }
+        ::selection{
+            background: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>pseudo elements</h1>
+    <h2>first line
+        <br>
+        2nd line <br>3rd line
+    </h2>
+    <input type="text" placeholder="enter something">
+    <ul>
+        <li>html</li>
+        <li>css</li>
+        <li>js</li>
+    </ul>
+</body>
+</html>
