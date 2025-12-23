@@ -28,11 +28,9 @@ function Check() {
     }
     const b={
         display:'flex',
-        gap:'150px',
-        margin:'20px',
-        padding:0,
-        justifyContent:'space-evenly',
-        border:'5px solid blue'
+        gap:'200px',
+        border:'5px solid skyblue',
+        justifyContent:'space-evenly'
 
     }
     const input={
@@ -40,6 +38,12 @@ function Check() {
         height:'30px',
         border:'5px solid skyblue',
         borderRadius:'10px'
+    }
+    const form={
+        display:'flex',
+        gap:'200px',
+        border:'5px solid skyblue',
+        justifyContent:'space-evenly'
     }
   return (
     <>
@@ -53,7 +57,7 @@ function Check() {
     <h1>blood group</h1>
     </div>
         {filteredData.map(item=>(
-            <div key={item.id} style={{display:'flex',gap:'30px'}}>
+            <div key={item.id} style={form}>
                 <div style={a}>{item.name}</div>
                 <div style={a}>{item.age}</div>
                 <div style={a}>{item.blood}</div>
